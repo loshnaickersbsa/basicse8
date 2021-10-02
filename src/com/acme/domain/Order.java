@@ -4,13 +4,13 @@ import com.acme.utils.MyDate;
 
 public class Order {
 
-    private final Good product;
+    private final Product product;
     private final Integer orderQuantity;
     private Double ordAmount;
     private MyDate orderDate;
     private String customer;
 
-    public Good getProduct() {
+    public Product getProduct() {
         return product;
     }
 
@@ -42,7 +42,7 @@ public class Order {
 
     }
 
-    public Order(Good product, Integer orderQuatity, Double ordAmount, MyDate orderDate, String customer) {
+    public Order(Product product, Integer orderQuatity, Double ordAmount, MyDate orderDate, String customer) {
         this.product = product;
         this.orderQuantity = orderQuatity;
         this.ordAmount = ordAmount;

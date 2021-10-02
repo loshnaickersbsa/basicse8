@@ -90,9 +90,7 @@ public abstract class  Good implements Product {
                 '}';
     }
 
-    public double volume() {
-        return 0.0;
-    }
+    public abstract double volume();
 
     public double weight() {
         return volume() * weightPerUofM;

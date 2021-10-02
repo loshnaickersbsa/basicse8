@@ -2,6 +2,9 @@ package com.acme.testing;
 
 import com.acme.utils.MyDate;
 
+import java.time.Year;
+import java.util.GregorianCalendar;
+
 public class TestMyDate {
 
 	public static void main(String[] args){
@@ -37,6 +40,9 @@ public class TestMyDate {
 
 		System.out.println("equals " + date4b.equals(date6));
 		System.out.println("equals " + date3.equals(date6));
+
+		GregorianCalendar gc = new GregorianCalendar();
+		gc.isLeapYear(4);
 
 	//	MyDate.leapYears();
 	}
